@@ -1,0 +1,29 @@
+package task2;
+
+public class switchDemo {
+    //Lesson-->10
+	public static void main(String[] args) {
+		char grade = 'A';
+		
+		switch(grade) {
+		case 'A':   // notun A olması durumunda ne yapılacağın komutu 
+			System.out.println("Mükemmel : Geçtiniz");
+			break;
+		case 'B' : //B ve C çıktısının aynı olması için bu şekilde yazılabilir
+		case 'C' : 
+			System.out.println("İyi : Geçtiniz");
+			break;		
+		case 'D' : 
+			System.out.println("Fena Değil : Geçtiniz");
+			break;
+		case 'F' : 
+			System.out.println("Malesef Kaldınız");
+			break;
+			default:
+				System.out.println("Geçersiz not girdiniz");
+		}
+
+	}
+
+}
+	
